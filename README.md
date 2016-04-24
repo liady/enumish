@@ -12,6 +12,7 @@ npm install enumish --save
 ```
 
 ## Usage
+### Basic
 Import the library and invoke it with a list of strings (for mirrored values):
 ```js
 import enums from 'enumify';
@@ -20,7 +21,7 @@ import enums from 'enumify';
 const Directions = enums('TOP', 'LEFT', 'RIGHT', 'BOTTOM', 'CENTER');
 Directions.TOP === 'TOP'; // true
 ```
-
+### Custom values
 Some of the arguments can be objects, for custom values:
 ```js
 // custom values
@@ -31,7 +32,7 @@ const SideBarComponents = enums('ICON_PICKER', {
 SideBarComponents.ICON_PICKER === 'ICON_PICKER'; // true
 SideBarComponents.LAYOUT_SELECTOR === 'LayoutSelector'; // true
 ```
-
+### Converter function
 You can supply the keys as an array, and a converter function for the second argument:
 ```js
 // custom converter function as the second argument
@@ -46,7 +47,7 @@ npm run test
 ```
 
 ## Configuration
-Built using [Lib Starter Light](https://github.com/liady/es6-lib-starter-light)
+Built using [Lib Starter Light](https://github.com/liady/es6-lib-starter-light).
 
 ## License
 MIT
