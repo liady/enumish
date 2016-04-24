@@ -53,7 +53,7 @@ npm run test
 ```
 
 ## Configuration
-Built using [Lib Starter Light](https://github.com/liady/es6-lib-starter-light).
+Built using [Library Starter Light](https://github.com/liady/es6-lib-starter-light).
 
 ## License
 MIT
