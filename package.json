@@ -5,6 +5,7 @@
   "main": "./lib/index.js",
   "devDependencies": {
     "babel-cli": "^6.2.4",
+    "babel-plugin-transform-object-assign": "^6.5.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-register": "^6.2.0",
     "mocha": "^2.2.5"
@@ -18,9 +19,8 @@
     "prepublish": "npm run build"
   },
   "babel": {
-    "presets": [
-      "es2015"
-    ]
+    "presets": ["es2015"],
+    "plugins": ["transform-object-assign"]
   },
   "keywords": [
     "enum",
