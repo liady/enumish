@@ -1,7 +1,7 @@
 {
   "name": "enumish",
   "description": "Create Enum-like objects easily",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./lib/index.js",
   "devDependencies": {
     "babel-cli": "^6.2.4",
