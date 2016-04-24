@@ -19,6 +19,7 @@ import enums from 'enumish';
 
 // basic usage
 const Directions = enums('TOP', 'LEFT', 'RIGHT', 'BOTTOM', 'CENTER');
+
 // result
 Directions.TOP === 'TOP'; // true
 ```
@@ -30,6 +31,7 @@ const SideBarComponents = enums('ICON_PICKER', {
     LAYOUT_SELECTOR:    'LayoutSelector',
     COLOR_PICKER:       'ColorPickerSection'
 });
+
 // result
 SideBarComponents.ICON_PICKER === 'ICON_PICKER'; // true
 SideBarComponents.LAYOUT_SELECTOR === 'LayoutSelector'; // true
@@ -39,6 +41,7 @@ You can supply the keys as an array, and a converter function for the second arg
 ```js
 // custom converter function as the second argument
 const Icons = enums(['BOLD', 'ITALIC'], val => val.toLowerCase());
+
 // result
 Icons.BOLD === 'bold'; // true
 ```
