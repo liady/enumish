@@ -15,7 +15,7 @@ npm install enumish --save
 ### Basic
 Import the library and invoke it with a list of strings (for mirrored values):
 ```js
-import enums from 'enumify';
+import enums from 'enumish';
 
 // basic usage
 const Directions = enums('TOP', 'LEFT', 'RIGHT', 'BOTTOM', 'CENTER');
