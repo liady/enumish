@@ -10,7 +10,7 @@ export default function createConstants(...args) {
 /**
  * Create constants object from an array
  */
-function mergeArrayToObject(origArr, converter) {
+function mergeArrayToObject(origArr = [], converter) {
     const arr = [].concat(origArr || []);
     return Object.freeze(arr.reduce((obj, val) => Object.assign(obj, mirrorValue(val, converter)), {}));
 }
